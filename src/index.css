@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.map-container {
+  max-width: 1100px;
+  margin-left: 30px; 
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 100%; /* Full width of the container */
+  height: 70%; /* 70% of the container height */
+}
+
+.threshold-control {
+  margin-top: 10px;
+}
