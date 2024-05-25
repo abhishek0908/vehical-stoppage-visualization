@@ -123,7 +123,7 @@ const MapVisualization = () => {
   const calculateDuration = (startTime, endTime) => {
     const start = new Date(startTime);
     const end = new Date(endTime);
-    const duration = (Math.abs(end - start) / (1000 * 60)); // Convert milliseconds to minutes
+    const duration = (Math.abs(end - start) / (1000)); // Convert milliseconds to minutes
     return parseFloat(duration.toFixed(2)); // Return duration rounded to 2 decimal places
   };
 
