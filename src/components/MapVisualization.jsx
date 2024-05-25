@@ -132,13 +132,14 @@ const MapVisualization = () => {
     setThreshold(value);
   };
 
+  
   return (
-    <div className="map-container">
-      <header className="map-header">
-      </header>
-      <div id="map" className="map"></div>
-      <div className="threshold-control mt-10">
+    <div className="p-4">
+      <div className="threshold-control flex items-center justify-center gap-2 mt-10">
+        <div>
         <label htmlFor="threshold" className="block font-bold text-lg mb-2">Stoppage Threshold (minutes):</label>
+        </div>
+        <div>
         <input
           type="number"
           id="threshold"
@@ -149,7 +150,10 @@ const MapVisualization = () => {
           onChange={handleThresholdChange}
           className="border border-gray-300 rounded px-3 py-2 mt-1"
         />
+        </div>
       </div>
+      <div id="map" className="h-screen w-full mt-4"></div>
+      
     </div>
   );
 };
