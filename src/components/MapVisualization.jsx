@@ -3,7 +3,7 @@ import dummyData from "../utils/dummyData"; // Importing dummy GPS data
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css"; // Import Mapbox CSS
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiYWJoaXNoZWswOTA4IiwiYSI6ImNsd2x3bW5qdzBoNWMyanBnaXZycW1hOGEifQ.xi9mwo5LXiMZLc54e7C9TQ'; // Replace with your Mapbox access token
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGVtb3VzZXIiLCJhIjoiY2x3bXMzd2p2MGg1cG5vcXZ6cjZlNzQifQ.k8mnVpA9JXb7KaC3b4Y5hA'; // Replace with your Mapbox access token
 
 const MapVisualization = () => {
   const [map, setMap] = useState(null);
